@@ -1,14 +1,14 @@
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Cairo", sans-serif;
 }
 
 #title {
   text-align: center;
-  background-color: #2B2B2B
+  background-color: #2b2b2b;
 }
 
 h1 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #fff;
   font-size: 3.5rem;
   line-height: 1.5;
@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: #fff;
   font-size: 3rem;
   line-height: 1.5;
@@ -24,34 +24,36 @@ h2 {
 }
 
 h3 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: black;
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 900;
+  text-align: right;
 }
 
 h4 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: black;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 700;
+  text-align: left;
 }
 
 h5 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Cairo", sans-serif;
   color: black;
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 900;
   text-align: center;
   padding: 2%;
-
 }
 
-.container-fluid {
-  padding: 3% 15% 7%;
+hr {
+  border: 2px solid black;
+  margin-top: 20px;
 }
 
 /* Navigation Bar */
@@ -60,7 +62,7 @@ h5 {
 }
 
 .navbar-brand {
-  font-family: "Ubuntu";
+  font-family: "Cairo";
   font-size: 2.5rem;
   font-weight: bold;
   margin-right: 200px;
@@ -77,7 +79,7 @@ h5 {
 /* Title Logo */
 .title-image {
   width: 35%;
-  color: #6F38C5;
+  color: #6f38c5;
 }
 
 .title {
@@ -89,10 +91,43 @@ h5 {
   margin: 3%;
 }
 
+/* body */
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+}
+
+.grid-1-cols {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 0px;
+}
+
+.header-text-box2 {
+  align-self: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.header-text {
+  margin-bottom: 24px;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
 /* Dj Section */
 #Djs {
   padding: 5.5% 15%;
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
 }
 
 .feature-box {
@@ -100,49 +135,43 @@ h5 {
   padding: 5%;
 }
 
-
 .artist-pic {
-  float: left;
+  display: flex;
   margin-right: 30px;
-  color: #6E85B7;
-  width: 25%;
-}
-
-.skills2 {
-  align-items:
+  width: 50%;
 }
 
 .artist-pic2 {
-  float: right;
-  margin-left: 30px;
-  width: 25%;
+  display: grid;
+
+  width: 100%;
 }
 
-.right-artist {
-}
-
-.skill-row2 {
-  text-align: right;
+.background-white {
+  background-color: white;
 }
 
 /* Contact */
 
 .contact {
   text-align: center;
-  background-color: #6F38C5;
+  background-color: #6f38c5;
   padding-top: 3%;
   text-decoration-color: bold;
 }
 
-.contact-text{
+.contact-text {
   color: black;
   text-size: 2em;
+}
+
+.btn {
 }
 /* Footer */
 
 #footer {
   text-align: center;
-  background-color: #6F38C5;
+  background-color: #6f38c5;
   padding-top: 5%;
   text-size: 2em;
 }
@@ -158,7 +187,5 @@ h5 {
 }
 
 .contact2 {
-
-
-  background-color: #6F38C5;
+  background-color: #6f38c5;
 }
